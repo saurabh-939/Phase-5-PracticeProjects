@@ -21,8 +21,8 @@ public class LoginTest {
   public void login() throws InterruptedException {
 	  
 	
-	  driver.findElement(By.name("email")).sendKeys("okgjydqmzowkbzsmie@bvhrs.com");
-	  driver.findElement(By.name("password")).sendKeys("Test1234");
+	  driver.findElement(By.name("email")).sendKeys("user@gmail.com.com");
+	  driver.findElement(By.name("password")).sendKeys("user");
 	 
 	  
 	 WebElement login= driver.findElement(By.id("login-button"));
@@ -32,7 +32,7 @@ public class LoginTest {
   }
   @BeforeMethod
   public void openURL() {
-	  driver.get("https://accounts.lambdatest.com/login");
+	  driver.get("http://localhost:8080/Medicare/login.jsp");
 	  System.out.println("We are currently on the following URL" +driver.getCurrentUrl());
   }
 
